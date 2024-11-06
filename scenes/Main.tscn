@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6f7l2s441qy2"]
+
+[ext_resource type="Script" path="res://scenes/Main.cs" id="1_c2vhk"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5qfhq"]
+size = Vector2(64, 64)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_c2vhk")
+
+[node name="Cursor" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_5qfhq")
+centered = false
+
+[node name="PlaceBuildButton" type="Button" parent="."]
+offset_top = 688.0
+offset_right = 117.0
+offset_bottom = 719.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Place Building"
